@@ -10,17 +10,6 @@ const gridHelper = new THREE.GridHelper(100, 300);
 scene.add(gridHelper);
 
 
-
-const texture = new THREE.TextureLoader().load('./assets/img_3.png');
-
-//earth
-
-
-/*
-const line = new THREE.LineSegments(edgeGeo, new THREE.LineBasicMaterial( { color: '#FFFFFF' }));
-scene.add( line )
-*/
-
 const boxGeo = new THREE.BoxGeometry(1);
 const boxMat = new THREE.MeshPhongMaterial({
     side: THREE.DoubleSide,

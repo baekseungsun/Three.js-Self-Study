@@ -1,2 +1,2 @@
 
-import './scene1.js';
+import './comparisonOfMaterials.js';
