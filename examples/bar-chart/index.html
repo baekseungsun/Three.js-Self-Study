@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Three.js Bar Chart</title>
+    <style>
+        html,body { height:100%; margin:0; background:#0b1061; color:#eee; font:14px/1.5 monospace; }
+        #app { height:100%; }
+        #ui {
+            position:fixed; bottom:12px; left:50%; transform:translateX(-50%);
+            background:#1118; border-radius:8px; padding:8px 12px;
+            display:flex; gap:6px;
+        }
+        #ui input {
+            width:60px; background:#0f172a; color:#eee;
+            border:1px solid #334; border-radius:6px; padding:4px;
+            -moz-appearance: textfield; /* Firefox */
+        }
+        #ui button {
+            background:#2563eb; color:#fff; border:0;
+            border-radius:6px; padding:6px 10px; cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+
+<form id="ui">
+    <input name="n1" type="number" placeholder="값1" value="0" />
+    <input name="n2" type="number" placeholder="값2" value="0" />
+    <input name="n3" type="number" placeholder="값3" value="0" />
+    <input name="n4" type="number" placeholder="값4" value="0" />
+    <input name="n5" type="number" placeholder="값5" value="0" />
+    <button type="submit">업데이트</button>
+</form>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
