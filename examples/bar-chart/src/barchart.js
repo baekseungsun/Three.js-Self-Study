@@ -90,13 +90,13 @@ export function createBarChart(container) {
         targets = normalize(values); // normalize numebr heigths too
     }
 
-    // 최초 높이
+    // Initial height
     setHeights([0, 0, 0, 0, 0]);
 
     let rafId;
     const animate = () => {
         rafId = requestAnimationFrame(animate);
-        // bars를 목표 높이로 보간(부드러운 애니메이션)
+
         bars.forEach((bar, i) => {
             const targetH = targets[i];               // actual height
             const currentH = bar.scale.y;
